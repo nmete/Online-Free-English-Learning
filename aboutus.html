@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>English Learning Website</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+
+
+<!-- JQUERY = hide and show effect using button in card deck section-->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+
+
+
+
+
+<!-- JQUERY = slide down and up (toggle) in "About Us" section -->
+
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+
+
+<!-- JQUERY = hide callback for "Learn more button in goals section of thinking girl" -->
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+});
+</script>
+
+
+<!-- JQUERY = chaining in Nav bar section ,click on "Online learn english to see effect"-->
+
+<script>
+$(document).ready(function(){
+  $("h1").click(function(){
+    $("#p1")
+      .slideUp(2000)
+      .slideDown(2000);
+  });
+});
+</script>
+
+<style type="text/css">
+    
+  svg { 
+            display: inline-block; 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            z-index: -1; 
+        } 
+        .container { 
+            display: inline-block; 
+            position: absolute; 
+            width: 100%; 
+            padding-bottom: 100%; 
+            vertical-align: middle; 
+            overflow: hidden; 
+            top: 0; 
+            left: 0; 
+        } 
+
+
+        .wave { 
+            position: absolute; 
+            top: 0px; 
+            left: 0px; 
+            right: 0px; 
+            height: 70px; 
+            width: 100%; 
+            background: dodgerblue; 
+            z-index: -1; 
+        } 
+        .wave::before { 
+            content: ""; 
+            display: block; 
+            position: absolute; 
+            border-radius: 100% 90%; 
+            width: 51%; 
+            height: 85px; 
+            background-color: white; 
+            right: 0px; 
+            top: 45px; 
+        } 
+        .wave::after { 
+            content: ""; 
+            display: block; 
+            position: absolute; 
+            border-radius: 100% 90%; 
+            width: 51%; 
+            height: 85px; 
+            background-color: dodgerblue; 
+            left: -8px; 
+            top: 25px; 
+        } 
+        
+
+  .center {
+  margin: auto;
+  width: 60%;
+  border: 1px  solid #ff0066;
+  padding: 10px;
+}
+
+  .container
+  {
+
+
+    padding-top: 400px;
+    padding-left: 150px;
+  }  
+
+
+
+  
+  .container-fluid
+  {
+
+    padding-top: 50px;
+    padding-left: 150px;
+  }  
+  
+  .bg-primary{
+    background-color: #33FF99  !important;
+}
+  
+  h4
+  {
+        font-family:Bubblegum Sans;
+        color:#FC0457 
+
+  }
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+
+  </style>
+
+  
+
+
+  <body style="text-align:center;">
+
+    <h1 style="color:white; text-align: center;font-family:Bubblegum Sans"> 
+        Online Learn English With Us
+      </h1> 
+      <div class="wave"></div>
+      <br><br>
+
+<!-- Navigation Bar-->
+
+        <nav id="p1" class="navbar navbar-expand-md">
+              <a class="navbar-brand" href="#">
+                <img src="./Images/learn english icon.png" alt="logo" style="width:50px; ">
+            </a>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar" >
+               <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="Home Page 1.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Events</a>
+
+                    </li>
+                      
+              </ul>
+            </div> 
+
+
+
+  
+            <div class="collapse navbar-collapse" id="collapsibleNavbar" >
+               <ul class="navbar-nav ml-auto">
+                    
+                    
+                    <li class="nav-item">
+                       <a class="btn btn-outline-success mr-2" href="signup.html" style="border-radius: 40px;">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="btn btn-outline-success mr-2" href="signin.html" style="border-radius: 40px;">Sign in</a>
+
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-outline-info mr-2" href="about us.html" style="border-radius: 40px;">About us</a>
+
+                    </li>    
+              </ul>
+            </div>  
+      </nav>
+  
+      <br><br>
+<!--nav bar ends-->
+
+
+
+
+
+
+
+  
+
+
+<!-- Thinking girl "Our Mission quote " section -->
+    <div class="container-fluid">
+          
+            
+            <div class="row">
+              <div class="col-sm-6" >
+                <br>
+                <br>
+                
+                <img src="./Images/thinking girl.jpg" alt="Image 3" width="400" height="400"  class="responsive">
+
+              </div>
+              <div class="col-sm-6" style="color:#FC0457 ;font-family:Bubblegum Sans" >
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 style="text-align: center;"> Our Mission</h2>
+
+                  <div class="center">
+                    <p>Our Mission is to provide you with knowledge and skills you need, to be able to craft the kinds of stories that you want to tell...
+                      <br>
+                  There is no substitute for hard work. – ...
+                  Do the difficult things while they are easy and do the great things while they are small.</p>
+                  </div>
+                  <br>
+                  <div class="text-center" >
+                    <!--<a href="#" class="btn btn-outline-primary">Learn More</a>  -->
+                    <button class="btn btn-outline-primary">Learn More</button>
+                    <p id="test">Web under construction....</p>
+                    
+
+                  </div>
+            </div>
+          </div>
+      </div>
+    
+
+
+<!-- JQUERY slide down and up (Toggle) section-->
+<br><br><br>
+<div id="flip">
+
+<h2 style="font-family: Bubblegum Sans;color:#FC0457">About Us</h2>
+</div>
+
+
+<div id="panel">
+
+<!-- Card deck -->
+
+
+  
+
+          <div class="card-deck" >
+            <div class="card bg-primary" >
+              <img class="card-img-top" src="./Images/p1.jpg" alt="Card image" >
+
+                <div class="card-body">
+                  <h4 class="card-title">Amruta</h4>
+                  <p class="card-text" >IT engineer</p>
+
+                  <button class="btn btn-primary" id="show">See Profile</button>
+                  <br>
+                  <a href="#" id="hide">Hide Profile</a>
+
+                </div>
+            </div>
+
+            <div class="card bg-primary"  >
+                <img class="card-img-top" src="./Images/p1.jpg" alt="Card image" >
+
+                  <div class="card-body">
+                      <h4 class="card-title">Vrushali </h4>
+                      <p class="card-text" >IT engineer</p>
+                      <button class="btn btn-primary" id="show">See Profile</button>
+     
+                  </div>
+            </div>
+
+
+            <div class="card bg-primary"  >
+                <img class="card-img-top" src="./Images/p1.jpg" alt="Card image" >
+
+                <div class="card-body">
+                  <h4 class="card-title">Maitreeyee</h4>
+                    <p class="card-text">IT engineer</p>
+                    <button class="btn btn-primary" id="show">See Profile</button>
+        
+                  </div>
+            </div>
+
+            <div class="card bg-primary" >
+              <img class="card-img-top" src="./Images/p1.jpg" alt="Card image" >
+
+              <div class="card-body">
+                <h4 class="card-title">Neha</h4>
+                  <p class="card-text">IT engineer</p>
+                  <button class="btn btn-primary" id="show">See Profile</button>
+               
+              </div>
+            </div>
+        </div>
+
+
+
+</div>
+
+
+
+<!-- Thinking girl "Our Values quote " section -->
+    <div class="container-fluid">
+          
+            
+            <div class="row">
+              
+              <div class="col-sm-6" style="color:#FC0457 ;font-family:Bubblegum Sans" >
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 style="text-align: center;"> Our Values</h2>
+
+                  <div class="center">
+                    <p>To give Everyone the ability to be heard,seen and share their thoughts and experiences  as they happen...!!!
+                      <br>
+                  There is no substitute for hard work. – ...
+                  Do the difficult things while they are easy and do the great things while they are small.</p>
+                  </div>
+                  <br>
+                  <div class="text-center" >
+                    <!--<a href="#" class="btn btn-outline-primary">Learn More</a>  -->
+                    <button class="btn btn-outline-primary">Learn More</button>
+                    <p id="test">Web under construction....</p>
+
+                    
+                    
+
+                  </div>
+            </div>
+
+            <div class="col-sm-6" >
+                <br>
+                <br>
+                
+                <img src="./Images/thinking girl.jpg" alt="Image 3" width="400" height="400"  class="responsive">
+
+              </div>
+            </div>
+        </div>
+    
+
+
+
+<!-- Footer-->
+  
+    <div style="font-family: Bubblegum Sans" align="center">
+      <br>
+      <br>
+        <div class="row" style="color: white">
+            <div  class="col-4 " style="color:#FC0457 ">
+              <h3 style="font-family: Bubblegum Sans">Need Help?</h3>
+              <a class="nav-link" href="Home Page 1.html" >FAQs</a>
+              <a class="nav-link" href="Gallery Page.html">Privacy </a>
+              <a class="nav-link" href="about us.html">Policy</a>
+
+              
+            </div>
+            <div  class="col-4 "style="color:#FC0457 " >
+              <h3 style="font-family: Bubblegum Sans">Useful Links</h3>
+              
+              <a class="nav-link" href="Home Page 1.html" >Home</a>
+              <a class="nav-link" href="Gallery Page.html">Gallery</a>
+              <a class="nav-link" href="about us.html">About us</a>
+              
+              
+            </div>
+            <div  class="col-4 " style="font-family: Bubblegum Sans ">
+              <h3 style="color:#FC0457 " >Contact Us</h3>
+              <i class='fas fa-map-marker-alt' style='font-size:36px'></i>
+              <i class='fas fa-envelope-square' style='font-size: 36px color:red' ></i>
+              
+              <p style="color:#008ae6 ">For queries and problems please write to:</p>
+              <p style="color:#008ae6 ">Email : learn.english@ritindia.edu</p>
+              <p style="color:#008ae6 ">Call:+91 9021613023</p>
+              
+
+              
+            </div>
+
+        </div>  
+      </div>
+    
+
+  </body>
+
+  </head>
+  </html>
+    
+    
+
+  </body>
+
+  </head>
+  </html>
